@@ -13,92 +13,77 @@
   });
   
 
-//   if (document.readyState == 'loading') {
-//     document.addEventListener('DOMContentLoaded', loaded)
-// } else {
-//     loaded()
-// }
-// function openForm() {
-//     document.getElementById("popupForm").style.display = "block";
-// }
-// function closeForm() {
-//     document.getElementById("popupForm").style.display = "none";
-// }
-// function testJS()
-// {
+  $('.like-btn').on('click', function() {
+    $(this).toggleClass('is-active');
+ });
 
-// var b = document.getElementById('card-text').value
+ 
+ $('.like-btn').on('click', function() {
+    $(this).toggleClass('is-active');
+ });
 
-// document.getElementById('cart-price').innerHTML = b;
+ $('.minus-btn').on('click', function(e) {
+    e.preventDefault();
+    var $this = $(this);
+    var $input = $this.closest('div').find('input');
+    var value = parseInt($input.val());
+ 
+    if (value &amp,amp,gt , 1) {
+        value = value - 1;
+    } 
+    else {
+        value = 0;
+    }
+ 
+  $input.val(value);
+ 
+$('.plus-btn').on('click', function(e) {
+    e.preventDefault();
+    var $this = $(this);
+    var $input = $this.closest('div').find('input');
+    var value = parseInt($input.val());
+ 
+    if (value &amp,amp,lt, 100) {
+        value = value + 1;
+    }
+    else {
+        value =100;
+    }
 
-// }
-// function allItems(){
-//     var x=document.getElementById('popupForm')
-//     var b=[]
-//     b.append(b)
-//     document.getElementById('quantity').innerHTML=b.length()
-// }
-// function closePay() {
-//     alert("Thank you for shopping with us")
-//     return (true)
-// }
-
-// function topFunction(){
-//     document.documentElement.scrollTop=0;
-// }
-
-// function openW(){
-//     open("#c2",'billingform')
-// }
-
-
-// function setNewImage(){
-// document.getElementById("coff1").src="tonic.jpg";
-// }
-// function setOldImage(){
-//    document.getElementById("coff1").src="coffee images/Cappucino.jpg"
-   
-// }
+    $input.val(value);
+})
 
 
-// function setNewImage1(){
-//     document.getElementById("coff2"). src="irish.jpeg";
-//     }                         
-//     function setOldImage1(){
-//        document.getElementById("coff2").src="coffee images/Hazelnut.jpg"
-       
-//     }
+
+let preorders_btn = document.getElementById("button")
+let container34 = document.querySelector("#container34")
+let closeBtn = document.querySelector(".button")
+preorders_btn.onclick = function(){
+  container34.style.display = "block"
+}
+closeBtn.onclick = function(){
+  container34.style.display = "none"
+}
+window.onclick = function(e){
+  if(e.target == container34){
+    container34.style.display = "none"
+  }
+}
 
 
-//     function setNewImage2(){
-//         document.getElementById("coff3"). src="iced.jpeg";
-//         }
-//         function setOldImage2(){
-//            document.getElementById("coff3").src="coffee images/icecreamcoffee.jpg"
-           
-//         }
 
-//         function setNewImage3(){
-//             document.getElementById("coff4"). src="correto.jpg";
-//             }
-//             function setOldImage3(){
-//                document.getElementById("coff4").src="coffee images/Latte coffee.jpg"
-               
-//             }  
 
-//             function setNewImage4(){
-//                 document.getElementById("coff5"). src="affogato.jpg";
-//                 }
-//                 function setOldImage4(){
-//                    document.getElementById("coff5").src="coffee images/carammel2.jpg"
-                   
-//                 }
 
-//                 function setNewImage5(){
-//                     document.getElementById("coff6"). src="mocha.jpg";
-//                     }
-//                     function setOldImage5(){
-//                        document.getElementById("coff6").src="coffee images/macho.jpg"
-                       
-//                     }      
 
+
+
+
+
+
+
+
+
+
+
+
+  
