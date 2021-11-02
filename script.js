@@ -55,35 +55,49 @@ $('.plus-btn').on('click', function(e) {
 
 
 
-let preorders_btn = document.getElementById("button")
-let container34 = document.querySelector("#container34")
-let closeBtn = document.querySelector(".button")
-preorders_btn.onclick = function(){
-  container34.style.display = "block"
-}
-closeBtn.onclick = function(){
-  container34.style.display = "none"
-}
-window.onclick = function(e){
-  if(e.target == container34){
-    container34.style.display = "none"
+const items = document.querySelectorAll('.accordion button');
+
+function toggleAccordion() {
+  const itemToggle = this.getAttribute('aria-expanded');
+
+  for (i = 0; i < items.length; i++) {
+    items[i].setAttribute('aria-expanded', 'false');
+  }
+
+  if (itemToggle == 'false') {
+    this.setAttribute('aria-expanded', 'true');
   }
 }
 
+items.forEach((item) => item.addEventListener('click', toggleAccordion));
 
 
 
 
 
 
+const menuBtn = document.querySelector(".menu-icon span");
+const searchBtn = document.querySelector(".search-icon");
+const cancelBtn = document.querySelector(".cancel-icon");
+const items = document.querySelector(".nav-items");
+const form = document.querySelector("form");
+menuBtn.onclick = ()=>{
+  items.classList.add("active");
+  menuBtn.classList.add("hide");
+  searchBtn.classList.add("hide");
+  cancelBtn.classList.add("show");
+}
+cancelBtn.onclick = ()=>{
+  items.classList.remove("active");
+  menuBtn.classList.remove("hide");
+  searchBtn.classList.remove("hide");
+  cancelBtn.classList.remove("show");
+  form.classList.remove("active");
+  cancelBtn.style.color = "#ff3d00";
+}
+searchBtn.onclick = ()=>{
+  form.classList.add("active");
+  searchBtn.classList.add("hide");
+  cancelBtn.classList.add("show");
+}
 
-
-
-
-
-
-
-
-
-
-  
