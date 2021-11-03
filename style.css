@@ -309,24 +309,6 @@ h1{
 }
 
 
-.btnns {
-  background-color:rgba(0, 0, 0, 0.253);
-  border-radius: 18px;
-  color: blue;
-  border-color: blue;
-  padding: 10px 25px;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 4px;
-  cursor: pointer;
-  border-radius: 9px;
-  margin-left: 45%;
-  margin-top: 20%;
-  border-style: groove;
-   
- }
-
 
  #rcorners4 {
   border-radius: 100px  100px 10px  10px ;
@@ -364,23 +346,6 @@ h1{
 
 
 
-.btn1{
-  background-color:rgba(0, 0, 0, 0.253);
-  border-radius: 18px;
-  color: blue;
-  border-color: blue;
-  padding: 10px 25px;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 4px;
-  cursor: pointer;
-  border-radius: 9px;
-  margin-left: 45%;
-  border-style: groove;
-  z-index: 20%;
-  
-}
 
 
 /* Light Mode styles */
@@ -701,23 +666,7 @@ clear: both;
 /* BUTTON FOR PRE-ORDERS */
 
 
-.button {
-  background-color:rgba(0, 0, 0, 0.253);
-  border-radius: 18px;
-  color: blue;
-  border-color: blue;
-   padding: 10px 25px;
-  text-decoration: none;
-   display: inline-block;
-   font-size: 16px;
-   margin: 4px 4px;
-   cursor: pointer;
-   border-radius: 9px;
-   margin-top: 25%;
-   margin-left: 10%;
-   border-style: groove;
-   
- }
+
 
  .order{
    margin-top: 3%;
@@ -1471,3 +1420,6 @@ label {
 h6{
   color: white;
 }
+
+/* cart */
+
